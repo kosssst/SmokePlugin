@@ -1,0 +1,4 @@
+name: Smoke Plugin
+version: '${project.version}'
+main: io.github.kosssst.smoke.SmokePlugin
+api-version: 1.19
