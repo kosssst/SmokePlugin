@@ -2,16 +2,18 @@ package io.github.kosssst.smoke;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
+
 public final class SmokePlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        Objects.requireNonNull(this.getCommand("hookah")).setExecutor(new HookahCommand());
+        System.out.println("Plugin enabled");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        System.out.println("Plugin disabled");
     }
 }
