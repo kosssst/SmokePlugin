@@ -1,7 +1,7 @@
 name: SmokePlugin
 version: '${project.version}'
 main: io.github.kosssst.smoke.SmokePlugin
-api-version: 1.19
+api-version: 1.20
 commands:
   hookah:
     description: Create hookah from brewing stand
